@@ -5,11 +5,35 @@
 [![License](https://img.shields.io/cocoapods/l/MZClockView.svg?style=flat)](http://cocoadocs.org/docsets/MZClockView)
 [![Platform](https://img.shields.io/cocoapods/p/MZClockView.svg?style=flat)](http://cocoadocs.org/docsets/MZClockView)
 
+![SampleScreenshot](https://31.media.tumblr.com/6cb5a76df81071c788474c69ac8addf3/tumblr_inline_nhvokwyQXF1skxvgn.jpg)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Usage
+
+>```objective-c
+>ClockView *clockView = [[ClockView alloc] initWithFrame:(CGRect)
+>                                                  color:(UIColor *)
+>                                                  hours:(NSInteger)
+>                                                minutes:(NSInteger);
+>[view addSubview:clockView];
+>```
+
+## How To Animate (Example)
+>```objectiv-c
+> [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval) target:(id) selector:@selector(tick) userInfo:(id) repeats:(BOOL)];
+>
+> - (void)tick {
+>   clockView.minutes++;
+> }
+>```
+
+# Acknowledgement
+
+ClockView for Android
+http://github.com/devholic/ClockView/
 
 ## Installation
 
