@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "MZClockView"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Colorful Clock View for iOS"
   s.description      = <<-DESC
                        # MZClockView
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
 ## How To Use
 '''
-$ pod 'MZClockView', '~> 1.0.0'
+$ pod 'MZClockView', '~> 1.0.1'
 '''
 
 ## Usage
@@ -29,22 +29,16 @@ ClockView *clockView = [[ClockView alloc] initWithFrame:(CGRect)
 [view addSubview:clockView];
 '''
 
-## How To Animate (Example)
-'''objectiv-c
-[clockView playTickingWithTimeInterval:(NSTimeInterval)];
-'''
-
 # Acknowledgement
 
 ClockView for Android
 http://github.com/devholic/ClockView/
                        DESC
   s.homepage         = "https://github.com/devminz/MZClockView"
-  # s.screenshots     = "https://31.media.tumblr.com/6cb5a76df81071c788474c69ac8addf3/tumblr_inline_nhvokwyQXF1skxvgn.jpg"
+  s.screenshots     = "https://31.media.tumblr.com/6cb5a76df81071c788474c69ac8addf3/tumblr_inline_nhvokwyQXF1skxvgn.jpg"
   s.license          = 'MIT'
   s.author           = { "devminz" => "devminz@naver.com" }
   s.source           = { :git => "https://github.com/devminz/MZClockView.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -54,7 +48,4 @@ http://github.com/devholic/ClockView/
     'MZClockView' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
