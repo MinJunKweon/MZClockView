@@ -22,18 +22,18 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 >```
 
 ## How To Animate (Example)
->```objectiv-c
-> [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval) target:(id) selector:@selector(tick) userInfo:(id) repeats:(BOOL)];
->
-> - (void)tick {
->   clockView.minutes++;
-> }
+
+# Start Ticking
+
+>```objective-c
+> [clockView playTickingWithTimeInterval:(NSTimeInterval)];
 >```
 
-# Acknowledgement
+# Stop Ticking
 
-ClockView for Android
-http://github.com/devholic/ClockView/
+>```objective-c
+> [clockView stopTicking];
+>```
 
 ## Installation
 
@@ -45,6 +45,11 @@ it, simply add the following line to your Podfile:
 ## Author
 
 devminz, devminz@naver.com
+
+# Acknowledgement
+
+ClockView for Android
+http://github.com/devholic/ClockView/
 
 ## License
 
