@@ -71,6 +71,13 @@
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     
+    CGRect frame = self.frame;
+    if (frame.size.width > frame.size.height)
+        frame.size.height = frame.size.width;
+    else
+        frame.size.width = frame.size.height;
+    self.frame = frame;
+    
     CGFloat borderWidth;
     CGFloat handWidth;
     
