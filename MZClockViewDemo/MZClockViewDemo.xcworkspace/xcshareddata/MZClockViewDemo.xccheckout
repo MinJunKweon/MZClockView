@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1B082B06-D8BA-4C69-8AD4-02164FB5CF69</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MZClockViewDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>66D033B5BA050B8BF957B34BE200524A3605A14A</key>
+		<string>https://github.com/devminz/MZClockView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MZClockViewDemo/MZClockViewDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>66D033B5BA050B8BF957B34BE200524A3605A14A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/devminz/MZClockView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>66D033B5BA050B8BF957B34BE200524A3605A14A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>66D033B5BA050B8BF957B34BE200524A3605A14A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MZClockView</string>
+		</dict>
+	</array>
+</dict>
+</plist>

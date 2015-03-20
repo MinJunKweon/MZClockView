@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'MZClockViewDemo', :exclusive => true do
+  pod "MZClockView", :path => "../"
+end
+
+target 'MZClockViewDemoTests', :exclusive => true do
+  pod "MZClockView", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
