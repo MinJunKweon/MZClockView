@@ -68,8 +68,9 @@
 
 #pragma mark - Draw
 
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
     
     CGRect frame = self.frame;
     if (frame.size.width > frame.size.height)
@@ -77,6 +78,10 @@
     else
         frame.size.width = frame.size.height;
     self.frame = frame;
+}
+
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
     
     CGFloat borderWidth;
     CGFloat handWidth;
