@@ -7,11 +7,10 @@
 
 ![SampleScreenshot](https://31.media.tumblr.com/6cb5a76df81071c788474c69ac8addf3/tumblr_inline_nhvokwyQXF1skxvgn.jpg)
 
-## Usage
+# Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Usage
 
 >```objective-c
 >ClockView *clockView = [[ClockView alloc] initWithFrame:(CGRect)
@@ -21,28 +20,28 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 >[view addSubview:clockView];
 >```
 
-## How To Animate (Example)
+# How To Animate (Example)
 
-# Start Ticking
+## Start Ticking
 
 >```objective-c
 > [clockView playTickingWithTimeInterval:(NSTimeInterval)];
 >```
 
-# Stop Ticking
+## Stop Ticking
 
 >```objective-c
 > [clockView stopTicking];
 >```
 
-## Installation
+# Installation
 
 MZClockView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
     pod "MZClockView"
 
-## Author
+# Author
 
 devminz, devminz@naver.com
 
@@ -51,7 +50,7 @@ devminz, devminz@naver.com
 ClockView for Android
 http://github.com/devholic/ClockView/
 
-## License
+# License
 
 MZClockView is available under the MIT license. See the LICENSE file for more info.
 
