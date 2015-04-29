@@ -68,7 +68,9 @@
 
 #pragma mark - Draw
 
-- (void)drawRect:(CGRect)rect {
+- (void)drawRect:(CGRect)rect
+{
+    [super drawRect:rect];
     // Drawing code
     
     CGRect frame = self.frame;
