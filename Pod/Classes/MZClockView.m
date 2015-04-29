@@ -8,7 +8,7 @@
 
 #import "MZClockView.h"
 
-#define LINE_WIDTH self.frame.size.width/10
+#define LINE_WIDTH self.frame.size.width/10.0f
 
 @interface MZClockView ()
 
@@ -95,10 +95,10 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextAddEllipseInRect(context, rect);
     CGContextAddEllipseInRect(context,
-                              CGRectMake(rect.origin.x + (rect.size.width/10),
-                                         rect.origin.y + (rect.size.height/10),
-                                         rect.size.width - (rect.size.width/5),
-                                         rect.size.height - (rect.size.height/5)));
+                              CGRectMake(rect.origin.x + (rect.size.width/10.0f),
+                                         rect.origin.y + (rect.size.height/10.0f),
+                                         rect.size.width - (rect.size.width/5.0f),
+                                         rect.size.height - (rect.size.height/5.0f)));
     CGContextSetFillColor(context, CGColorGetComponents(self.themeColor.CGColor));
     CGContextEOFillPath(context);
     
@@ -107,7 +107,7 @@
     CGContextSetLineWidth(context, LINE_WIDTH);
     CGContextSetLineJoin(context, kCGLineJoinRound);
     CGContextSetLineCap(context, kCGLineCapRound);
-    CGContextMoveToPoint(context, self.bounds.size.width/2, self.bounds.size.height/2);
+    CGContextMoveToPoint(context, self.bounds.size.width/2.0f, self.bounds.size.height/2.0f);
     CGContextAddLineToPoint(context, [self getHoursX], [self getHoursY]);
     CGContextStrokePath(context);
     
@@ -116,7 +116,7 @@
     CGContextSetLineWidth(context, LINE_WIDTH);
     CGContextSetLineJoin(context, kCGLineJoinRound);
     CGContextSetLineCap(context, kCGLineCapRound);
-    CGContextMoveToPoint(context, self.bounds.size.width/2, self.bounds.size.height/2);
+    CGContextMoveToPoint(context, self.bounds.size.width/2.0f, self.bounds.size.height/2.0f);
     CGContextAddLineToPoint(context, [self getMinutesX], [self getMinutesY]);
     CGContextStrokePath(context);
 }
@@ -160,30 +160,30 @@
 
 - (CGFloat)getMinutesX
 {
-    CGFloat length = (self.bounds.size.width - (self.bounds.size.width/10))/2;
+    CGFloat length = (self.bounds.size.width - (self.bounds.size.width/10.0f))/2.0f;
     CGFloat angle = [self convertToRadian:self.minutes * 6.0f];
     return self.bounds.size.width/2 + (sin(angle)*length*0.6f);
 }
 
 - (CGFloat)getMinutesY
 {
-    CGFloat length = (self.bounds.size.height - (self.bounds.size.height/10))/2;
+    CGFloat length = (self.bounds.size.height - (self.bounds.size.height/10.0f))/2.0f;
     CGFloat angle = [self convertToRadian:(self.minutes * 6.0f) + 180];
     return self.bounds.size.height/2 + (cos(angle)*length*0.6f);
 }
 
 - (CGFloat)getHoursX
 {
-    CGFloat length = (self.bounds.size.width - (self.bounds.size.width/10))/2;
+    CGFloat length = (self.bounds.size.width - (self.bounds.size.width/10.0f))/2.0f;
     CGFloat angle = [self convertToRadian:(self.hours * 30.0f) + (self.minutes * 0.5f)];
     return self.bounds.size.width/2 + (sin(angle)*length*0.4f);
 }
 
 - (CGFloat)getHoursY
 {
-    CGFloat length = (self.bounds.size.height - (self.bounds.size.height/10))/2;
+    CGFloat length = (self.bounds.size.height - (self.bounds.size.height/10.0f))/2.0f;
     CGFloat angle = [self convertToRadian:(self.hours * 30.0f) + (self.minutes * 0.5f) + 180];
-    return self.bounds.size.width/2 + (cos(angle)*length*0.4f);
+    return self.bounds.size.width/2.0f + (cos(angle)*length*0.4f);
 }
 
 #pragma mark - Convert Method
